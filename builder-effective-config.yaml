@@ -1,0 +1,18 @@
+directories:
+  output: dist
+  buildResources: build
+appId: kto.delivery
+publish:
+  - provider: generic
+    url: https://s3.khaothi.online/files/tsa-delivery-client/
+win:
+  target: nsis
+  requestedExecutionLevel: highestAvailable
+nsis:
+  oneClick: false
+  perMachine: true
+linux:
+  category: your.app.category.type
+  target: AppImage
+files: []
+electronVersion: 22.2.0
